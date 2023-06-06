@@ -20,8 +20,10 @@ export const Flowers = () => {
           </Link>{" "}
           Flowers
         </h3>
+
         <PlantList plantsData={FLOWERS} />
       </div>
-    </React.Fragment>
+      </React.Fragment>
+
   );
 };

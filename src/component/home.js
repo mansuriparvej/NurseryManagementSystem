@@ -4,8 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.css";
 import sideDeco from "../shared/sideDeco.svg";
 
-class Home extends Component {
-  render() {
+function Home() {
     return (
       <React.Fragment>
         <img
@@ -61,7 +60,6 @@ class Home extends Component {
         </div>
       </React.Fragment>
     );
-  }
 }
 
 export default Home;

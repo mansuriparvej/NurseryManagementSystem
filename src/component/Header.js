@@ -18,11 +18,7 @@ const MyNavbar = ({ basket }) => {
           Home
         </NavLink>
       </Col>
-      <Col xs={12} md={2}>
-        <NavLink to="/catalog" aria-current="page">
-          Online Purchase
-        </NavLink>
-      </Col>
+    
       <Col xs={12} md={2}>
         <NavLink to="/shopping_basket" aria-current="page">
           <img

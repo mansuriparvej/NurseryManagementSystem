@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
 import { CategoryCard } from "./Cards";
 
-class Catalog extends Component {
-  render() {
+function Catalog(){
     return (
       <React.Fragment>
         <div className="row row-content" />
@@ -31,6 +30,5 @@ class Catalog extends Component {
       </React.Fragment>
     );
   }
-}
 
 export default Catalog;

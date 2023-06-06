@@ -19,8 +19,6 @@ export const putInBasket = (index) => {
 };
 // Currently called: Card.js
 
-////////////////////////////////////////////////////////////////////////////////
-
 export const openCheckout = () => {
   return {
     type: ActionTypes.OPEN_CHECKOUT,
