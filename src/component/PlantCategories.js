@@ -14,9 +14,6 @@ export const Flowers = () => {
             className="no-underline"
             style={{ fontSize: "0.5em" }}
           >
-            <span role="img" aria-label="Go Back">
-              🔙
-            </span>
           </Link>{" "}
           Flowers
         </h3>

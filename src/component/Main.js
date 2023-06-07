@@ -13,22 +13,19 @@ function Main() {
     }
 
     return (
-      <div>
+      <div className="container-fluid">
         <Header />
-        {/* Subpages */}
         <Switch>
-          {/* <Route path="/home" component={HomePage} /> */}
 
           {/* Separate Plant Categories */}
           <Route exact path="/home" component={Flowers} />
-          <Route exact path="/catalog" component={Catalog} />
+          <Route exact path="/flowers" component={Catalog} />
           <Route exact path="/shopping_basket" component={ShoppingBasket} />
           <Redirect to="/home" />
         </Switch>
 
       </div>
     );
-  } // End of render()
-
+  }
 
 export default withRouter(Main);

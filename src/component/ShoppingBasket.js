@@ -52,10 +52,10 @@ class ShoppingBasket extends Component {
 
       if (item.id === e.id && tempArray.quantity > 0) {
         tempArray.quantity -= 1;
-      } // else (quantity == 0): do nothing
+      } 
       return tempArray;
     });
-    // Remove (qunatity == 0) items
+   
     updatedBasket = updatedBasket.filter((item) => item.quantity > 0);
 
     this.statesUpdate(updatedBasket);
@@ -75,7 +75,7 @@ class ShoppingBasket extends Component {
 
   render() {
     var subtotal = 0;
-    const basket = this.state.basket; // To avoid touch the state directly
+    const basket = this.state.basket;
 
     const merchandise = basket.map((item) => {
       subtotal += item.price * item.quantity;

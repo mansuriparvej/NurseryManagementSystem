@@ -1,7 +1,7 @@
 /* Color-dark: #764abc */
 /* Color-medium: #a07dd8 */
 /* Color-light: #c3a0e5 */
-/* Color-lighter: #e5cbf8 */
+/* Color-lighter: #b253ff */
 /* Light-blue: #bbe5f9 */
 /* Light-green: #d1ffd8 */
 /* Dark-green: #60a060 */
@@ -48,8 +48,8 @@ h2 em {
 
 h3 {
   font-family: "cheddar jack";
-  color: #764abc;
-  background-color: #e5cbf8;
+  color: #fff;
+  background-color: #b253ff;
   font-size: 3em;
   position: relative;
   top: 2rem;
@@ -69,8 +69,9 @@ iframe {
 }
 
 .botanical {
-  font-size: 14px;
-  font-family: fantasy;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Open Sans";
 }
 
 .btn-primary {
@@ -108,7 +109,7 @@ iframe {
 }
 
 .card {
-  box-shadow: 10px 10px 5px #aaa;
+  box-shadow: 5px 10px 15px #b8b8b8bf;
   margin-bottom: 3em;
 }
 
@@ -119,8 +120,11 @@ iframe {
 .card-header {
   display: block;
   font-size: 0.9rem;
+  color: #fff;
 }
-
+.card.card .card-header{
+  color: #000;
+}
 .center {
   text-align: center;
   vertical-align: middle;
@@ -150,13 +154,10 @@ iframe {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 40rem;
+  width: 100%;
   font-weight: bold;
-  margin-top: 2em;
-  margin-left: 4em;
-  padding-left: 1em;
   background-color: rgb(244, 233, 252, 0.5);
-  box-shadow: 2px 2px 5px #ddd;
+  box-shadow: 4px 3px 12px #ccccccdb;
 }
 
 .navbar a {
@@ -194,12 +195,11 @@ iframe {
 .shopping {
   object-fit: cover;
   width: 10rem;
-  height: 10rem;
 }
 
 .shopping th {
   color: white;
-  background-color: #764abc;
+  background-color: #b253ff;
 }
 
 .site-footer {
@@ -249,26 +249,6 @@ iframe {
   align-self: flex-start;
 }
 
-/* Animation */
-.growth {
-  position: relative;
-  flex: 200; /*grow*/
-  animation: growing ease-in-out;
-  animation-duration: 1000ms;
-}
-
-@keyframes growing {
-  0% {
-    width: 0;
-    height: -50;
-  }
-  100% {
-    width: 30;
-    height: -10;
-  }
-}
-/* End of Animation */
-
 #covid-19 {
   color: red;
 }
@@ -296,4 +276,39 @@ iframe {
   letter-spacing: 5px;
   margin-bottom: 0.3em;
   color: #764abc;
+}
+
+.card-img.shopping{
+  height: 10rem;
+}
+.prize{
+  position: absolute;
+    bottom: 6px;
+    right: 8px;
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+}
+.nav-link{
+  position: relative;
+}
+.navbar-nav a{
+  padding: 22px 12px;
+  margin: 0 4px;
+}
+.add-to-cart svg{
+  color: #fff;
+  fill: #fff;
+}
+.cart-icon{
+  margin: 1rem;
+  font-size: 20px;
+  position: absolute;
+  top: 11px;
+}
+.cart-number{
+  position: absolute;
+  top: -17px;
+  font-size: 17px;
+  right: 5px;
 }
