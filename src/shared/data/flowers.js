@@ -12,7 +12,7 @@ export const FLOWERS = [
     name: "California Poppy 'Carmine King' ",
     botanical: "Eschscholzia californica",
     image:
-      "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFPOP125-1_medium.jpg",
+      "https://www.applewoodseed.com/wp-content/uploads/2016/11/ECCK-1003.jpg",
     price: 2.29,
   },
   {
@@ -20,7 +20,7 @@ export const FLOWERS = [
     name: "California Poppy 'Mikado' ",
     botanical: "Eschscholzia californica",
     image:
-      "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFPOP126-2_medium.jpg",
+      "https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     price: 2.29,
   },
   {
@@ -28,7 +28,7 @@ export const FLOWERS = [
     name: "California Poppy 'Red Chief' ",
     botanical: "Eschscholzia californica",
     image:
-      "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFPOP134-_medium.jpg",
+      "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=404&q=80",
     price: 2.29,
   },
   {
@@ -36,7 +36,7 @@ export const FLOWERS = [
     name: "Forget-me-not",
     botanical: "Myosotis alpestris",
     image:
-      "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFFOR113-1_medium.jpg",
+      "https://images.unsplash.com/photo-1468327768560-75b778cbb551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     price: 1.99,
   },
   {
@@ -44,7 +44,7 @@ export const FLOWERS = [
     name: "Lithodora 'Grace Ward' ",
     botanical: "Lithodora diffusa 'Grace Ward'",
     image:
-      "https://mnc-img-01.sfo2.cdn.digitaloceanspaces.com/wp-content/uploads/plants/originals/12715.jpg",
+      "https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     price: 2.99,
   },
   {
@@ -52,7 +52,7 @@ export const FLOWERS = [
     name: "Lithodora 'Gold 'N Sapphire' ™",
     botanical: "Lithodora diffusa 'Gold 'N Sapphire'",
     image:
-      "https://www.gardenia.net/storage/app/public/uploads/images/detail/Lithodora-Gold-N-Sapphires-5%20Optimized.jpg",
+      "https://images.unsplash.com/photo-1600647993560-11a92e039466?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
     price: 4.49,
   },
   {
@@ -60,7 +60,7 @@ export const FLOWERS = [
     name: "Lithodora 'Star' (Blue Star)",
     botanical: "Lithodora diffusa 'Star'",
     image:
-      "https://i2.wp.com/southeasternhorticultural.co.uk/wp-content/uploads/2019/02/58ba1380b77bc.jpg",
+      "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     price: 3.49,
   },
   {
@@ -68,7 +68,7 @@ export const FLOWERS = [
     name: "Lithodora 'White Star' ™",
     botanical: "Lithodora diffusa 'White Star'",
     image:
-      "http://www.musthaveperennials.com/wp-content/uploads/2017/06/Lithodora_White-Star_cu.jpg",
+      "https://mnc-img-01.sfo2.cdn.digitaloceanspaces.com/wp-content/uploads/plants/originals/12715.jpg",
     price: 4.49,
   },
 ];
