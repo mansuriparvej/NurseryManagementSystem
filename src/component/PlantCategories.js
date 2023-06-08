@@ -9,12 +9,6 @@ export const Flowers = () => {
     <React.Fragment>
       <div className="container">
         <h3>
-          {/* <Link
-            to="/catalog"
-            className="no-underline"
-            style={{ fontSize: "0.5em" }}
-          >
-          </Link>{" "} */}
           Flowers
         </h3>
 

@@ -113,8 +113,6 @@ function Checkout(props) {
     }
   };
 
-  console.log('foreErrors', formerrors)
-
   return (
     <Modal show={show} size="lg" centered>
       <Modal.Header>

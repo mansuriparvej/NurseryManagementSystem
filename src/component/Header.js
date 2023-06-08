@@ -1,14 +1,8 @@
 import React from "react";
 import { Col, Row, Nav, Navbar } from "react-bootstrap";
 import {  NavLink } from "react-router-dom";
-import { connect } from "react-redux";
-import shoppingBasket from "../shared/svg/shoppingBasket.svg";
-import shoppingBasketWithFlowers from "../shared/svg/shoppingBasketWithFlowers.svg";
 import { Container } from "react-bootstrap";
-
-const mapStateToProps = (state) => {
-  return { basket: state.ReduxBasket };
-};
+import { useSelector } from "react-redux";
 
 const MyNavbarNew = ({basket}) => { return(
   <Navbar bg="light" expand="lg" className="navbar">
@@ -36,7 +30,8 @@ const MyNavbarNew = ({basket}) => { return(
 </Navbar>
 )}
 
-function Header(props) {
+export default function Header() {
+  const basket = useSelector(state => state.ReduxBasket)
   return (
     <React.Fragment>
       <Row>
@@ -45,7 +40,7 @@ function Header(props) {
           </Row>
           <Row xs={8} md={10}>
             {/* <MyNavbar basket={props.basket} /> */}
-            <MyNavbarNew basket={props.basket} />
+            <MyNavbarNew basket={basket} />
           </Row>
         </Col>
       </Row>
@@ -53,4 +48,4 @@ function Header(props) {
   );
 }
 
-export default connect(mapStateToProps)(Header);
+
