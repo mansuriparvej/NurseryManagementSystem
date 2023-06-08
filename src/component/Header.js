@@ -36,30 +36,6 @@ const MyNavbarNew = ({basket}) => { return(
 </Navbar>
 )}
 
-const MyNavbar = ({ basket }) => {
-  return (
-    <Nav className="navbar">
-      <Col xs={12} md={2}>
-        <NavLink to="/home" aria-current="page">
-          Home
-        </NavLink>
-      </Col>
-    
-      <Col xs={12} md={2}>
-        <NavLink to="/shopping_basket" aria-current="page">
-          <img
-            src={basket.length > 0 ? shoppingBasketWithFlowers : shoppingBasket}
-            title="Shopping Basket"
-            alt="Shopping Basket"
-            id="shopping-basket"
-          />
-          <p className="cart-number">{basket.length > 0 ? JSON.stringify(basket.length) : "" }</p>
-        </NavLink>
-      </Col>
-    </Nav>
-  );
-};
-
 function Header(props) {
   return (
     <React.Fragment>
