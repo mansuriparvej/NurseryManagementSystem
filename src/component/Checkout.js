@@ -1,28 +1,17 @@
 import React, { useState } from "react";
 import { Button, Modal, Image, Form } from "react-bootstrap";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
-  openCheckout,
   closeCheckout,
   updateBasket,
 } from "../redux/ActionCreators";
 
-const mapStateToProps = (state) => {
-  return {
-    show: state.CheckoutModal,
-  };
-};
-
-const mapDispatchToProps = {
-  openCheckout: () => openCheckout(),
-  closeCheckout: () => closeCheckout(),
-  updateBasket: (basket) => updateBasket(basket),
-};
-
 // == Checkout Component ==
-function Checkout(props) {
+const Checkout = (props) => {
+  const dispatch = useDispatch();
+  const show = useSelector(state => state.CheckoutModal)
   const [delivery, setDelivery] = useState(false);
-  const { subtotal, show } = props;
+  const { subtotal } = props;
   // const [showMessage, setShowMessage] = useState(false);
   const [values, setValues] = useState({
     cardNumber: "",
@@ -49,8 +38,8 @@ function Checkout(props) {
 
     if (validate(values)) {
     //  setShowMessage(true);
-      props.closeCheckout();
-      props.updateBasket(emptyBasket);
+      dispatch(closeCheckout());
+     dispatch(updateBasket(emptyBasket));
       total === 0
       ? alert("Your basket is empty.")
       : alert("We have received your order.");
@@ -200,7 +189,7 @@ function Checkout(props) {
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button className="btn-light" onClick={() => props.closeCheckout()}>
+        <Button className="btn-light" onClick={() => dispatch(closeCheckout())}>
           Later
         </Button>
         <Button className="btn-primary" onClick={() => handleOrder(total)}>
@@ -211,4 +200,4 @@ function Checkout(props) {
   );
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Checkout);
+export default Checkout;
