@@ -7,7 +7,6 @@ import {
   Button,
 } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
-import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
 export const CategoryCard = ({ name, image, text }) => {
   return (
@@ -46,7 +45,7 @@ const mapDispatchToProps = {
 };
 
 const CatalogCard_original = (props) => {
-  const { index, name, image, text, price } = props;
+  const { index, name, image, price } = props;
 
   const handleSelectedItem = (SelectedIndex) => {
     props.putInBasket(SelectedIndex);

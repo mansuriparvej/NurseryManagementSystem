@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Row, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Col, Row, Nav, Navbar } from "react-bootstrap";
+import {  NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
 import shoppingBasketWithFlowers from "../shared/svg/shoppingBasketWithFlowers.svg";
